@@ -14,7 +14,7 @@ export default function Home() {
         <h3 className="text-3xl text-center">Site em desenvolvimento</h3>
       </main>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://rixxer.com.br"
