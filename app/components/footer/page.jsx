@@ -10,8 +10,12 @@ export default function Footer() {
 
         <div className="flex-1 md:py-0 py-6">
           <h3 className="text-secondary font-bold mb-2">Siga-nos nas Redes Sociais</h3>
-          <FacebookIcon fontSize="large" className="mr-2" />
-          <InstagramIcon fontSize="large" />
+          <Link href="https://www.facebook.com/cartaodescontolegaloficial" target="_blank">
+            <FacebookIcon fontSize="large" className="mr-2" />
+          </Link>
+          <Link href="https://www.instagram.com/cartaodescontolegal" target="_blank">
+            <InstagramIcon fontSize="large" />
+          </Link>
         </div>
 
         <div className="flex-1 md:py-0 py-6">
