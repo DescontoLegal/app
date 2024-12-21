@@ -13,8 +13,8 @@ export default function Slider() {
           <div className="relative px-10 text-center md:text-left md:pl-20 md:pt-6">
             <div className="absolute top-6 left-20 h-full w-1 bg-transparent md:bg-white"></div>
             <p className="text-white text-xl md:pl-4 md:pr-20">
-              Obtenha <span className="font-bold">descontos</span> nas principais lojas da cidade,
-              e aproveite para <span className="font-bold">comprar presentes para toda sua família.</span>
+              Obtenha <span className="font-bold text-secondary">descontos</span> nas principais lojas da cidade,
+              e aproveite para <span className="font-bold text-secondary">comprar presentes para toda sua família.</span>
             </p>
           </div>
         </div>
