@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/_luna/css.css">
+  <!-- <link rel="stylesheet" href="css/playg.css"> -->
+  <!-- <link rel="stylesheet" href="css/playground.css"> -->
+  
+  <link rel="stylesheet" href="_inc/_slick/slick.css">
+  <link rel="stylesheet" href="_inc/_slick/slick-theme.css">
+
+  <link rel="stylesheet" href="css/_misc/animate.css">
+  
+  <link rel="stylesheet" href="_inc/_ai/css/all.min.css">
+  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+  <title>Desconto Legal</title>
+</head>
+<body>
+<div class="ctn-mngr">
+  <header class="header">
+    <div class="nav-ctn ctn-mb ctn-lg">
+      <img src="img/logo.png" alt="">
+
+        <div class="buy-it">
+          <a href="http://cartaodescontolegal.com.br/fazer-cartao.html">Faça seu cartão</a>
+        </div>
+
+        <i class="fas fa-bars nav-btn"></i>
+        <div class="nav close">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="http://cartaodescontolegal.com.br">Início</a></li>
+            <li class="nav-item"><a href="http://cartaodescontolegal.com.br/parceiros.html">Parceiros</a></li>
+            <li class="nav-item"><a href="http://cartaodescontolegal.com.br/trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+
+    </div> 
+  </header>     
+  
+  <section class="new-card ctn-mb ctn-lg p-md">
+
+    <div class="tab">
+      <button class="tablinks" onload="openCity(event, 'London')" onclick="openCity(event, 'London')">Finalizar pelo Whatsapp</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Receba uma Visita</button>
+    </div>
+
+    <div id="London" class="tabcontent grid ctn-mb ctn-600 ctn-p-sm">
+      <form method="POST" action="send.php">
+        <div class="grid new-card-grid gutter-md grid-space grid-center">
+                        
+          <div class="col col-break">
+            <input id="name" name="type" value="Finalizar cartão por Whatsapp" type="hidden" required>
+          </div>        
+         
+          <div class="col col-break col-md-9">
+            <label for="">Nome Completo</label>
+            <input id="name" name="name" type="text" placeholder="Nome" required>
+          </div>   
+                  
+          <div class="col col-break col-md-3">
+            <label for="">Celular(Whatsapp)</label>
+            <input id="phone" name="phone" type="number" placeholder="Telefone" required>
+          </div>  
+
+          <div class="col col-4 col-md-3">
+            <input type="submit" id="button1" value="Enviar">
+          </div>
+        </div>
+      </form>        
+    </div>
+    
+    <div id="Paris" class="tabcontent grid ctn-mb ctn-600">
+      <form method="POST" action="send.php">
+        <div class="grid new-card-grid gutter-md grid-space grid-center">
+                 
+         
+          <div class="col col-break">
+            <input id="name" name="type" value="Finalizar cartão por visita" type="hidden" required>
+          </div> 
+                      
+                  
+          <div class="col col-break col-md-6">
+            <label for="">Nome Completo</label>
+            <input id="name" name="name" type="text" placeholder="Nome" required>
+          </div> 
+  
+          <div class="col col-6 col-md-3">
+            <label for="">Identidade</label>
+            <input id="id" name="id" type="number" placeholder="ID" required>
+          </div>   
+                      
+          <div class="col col-6 col-md-3">
+            <label for="">CPF</label>
+            <input id="cpf" name="cpf" type="number" placeholder="CPF" required>
+          </div>                
+           
+          <div class="col col-break col-md-9">
+            <label for="">Endereço</label>
+            <input id="adress" name="adress" type="text" placeholder="Endereço" required>
+          </div>    
+                                  
+          <div class="col col-break col-md-3">
+            <label for="">Celular(Whatsapp)</label>
+            <input id="phone" name="phone" type="number" placeholder="Telefone" required>
+          </div>
+
+          <div class="hide col col-break captcha">
+            <div class="g-recaptcha" data-sitekey="6Le-CMQZAAAAAL88WPbfDaO-21tuk0xAxiwEZzG4" data-callback="enableBtn"></div>
+          </div>
+          
+          <div class="col col-4 col-md-3">
+            <input type="submit" id="button1" value="Enviar" >
+          </div>
+          
+        </div>
+      </form>         
+    </div>
+
+    
+  </section>
+  
+  
+  <footer class="footer-bg ftr-fix">
+    <div class="footer ctn-mb ctn-lg ctn-p-t-sm grid  grid-center grid-space">
+     
+      <div class="col col-break col-sm-3 col-md-6 col-lg-4 footer-logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      
+      <div class="col col-break col-md-6 col-lg-4 footer-contact-us">
+       
+        <h1 class="footer-title m-b-md">Fale conosco</h1>
+        
+        <div class="contact-info">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>(24) 3365-8624</p>
+        </div>
+         
+        <div class="contact-info">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>(24) 98859-9197</p>
+        </div>        
+         
+        <div class="contact-info contact-info-mail">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fas fa-at fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>empreendimentos@cartaodescontolegal.com.br</p>
+        </div>
+        
+        
+      </div>    
+        
+      <div class="col col-break col-md-6 col-lg-4 footer-adress">
+
+        <h1 class="footer-title m-b-md">Endereço</h1>
+        
+        <p>Rua Francelino Alves de Lima Nº 750 Sala 105 Nova Angra</p>
+        
+        <div class="nav-social">
+          <a target="_blank" href="https://www.facebook.com/Cart%C3%A3o-Desconto-LEGAL-106814707546300"><i class="fab fa-facebook-square"></i></a>
+          <a target="_blank" href="https://instagram.com/cartaodescontolegal" ><i class="fab fa-instagram"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="devby">
+      <p>Desenvolvido por Victor Hugo</p>
+    </div>
+  </footer>
+  </div>
+  
+ 
+
+
+  <!--            SCRIPTS           --> 
+                   
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+                  
+  <script src="js/jquery-3.4.1.min.js"></script>            
+                        
+  <script src="_inc/_slick/slick.min.js"></script>                       
+                          
+  <script src="js/luna.js"></script> 
+                         
+  <script src="js/script.js"></script>
+  
+  <script>
+    window.onload = function() {
+      if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+      }
+    }
+  })
+  </script>
+  
+</body>
+</html>

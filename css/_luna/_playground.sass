@@ -1,0 +1,129 @@
+/* Customize the label (the container) */
+.checkmark-ctn 
+  display: block
+  position: relative
+  padding: 8px 8px 4px 7px
+  margin-right: 15px
+  //padding-left: 35px
+  cursor: pointer
+  user-select: none
+
+/* Hide the browser's default checkbox */
+.checkmark-ctn input 
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+/* Create a custom checkbox */
+.checkmark 
+  position: absolute
+  top: 0
+  left: 0
+  height: 25px
+  width: 25px
+  background-color: lightgray
+
+/* On mouse-over, add a grey background color */
+.checkmark-ctn:hover input ~ .checkmark 
+  background-color: #ccc
+
+/* When the checkbox is checked, add a blue background */
+.checkmark-ctn input:checked ~ .checkmark 
+  background-color: $color-two
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+/* Show the checkmark when checked */
+.checkmark-ctn input:checked ~ .checkmark:after 
+  display: block
+
+/* Style the checkmark/indicator */
+.checkmark-ctn .checkmark:after 
+  left: 9px
+  top: 5px
+  width: 5px
+  height: 10px
+  border: solid white
+  border-width: 0 3px 3px 0
+  transform: rotate(45deg)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+/* Customize the label (the container) */
+.spots-cm 
+  margin-top: 10px
+  display: block
+  position: relative
+  padding: 8px 8px 4px 7px
+  cursor: pointer
+  user-select: none
+
+/* Hide the browser's default checkbox */
+.spots-cm input 
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+/* Create a custom checkbox */
+.spots-cm-txt
+  position: absolute
+  top: 0
+  left: 0
+  text-align: center
+  //height: 145%
+  width: 80%
+  background-color: #009B24
+  color: white
+  font-weight: bold
+  font-size: 1.2rem
+  font-family: "Montserrat"
+  padding: 12px 15px
+  
+
+/* On mouse-over, add a grey background color */
+.spots-cm:hover input ~ .spots-cm-txt
+  //background-color: dimgray
+
+/* When the checkbox is checked, add a blue background */
+.spots-cm input:checked ~ .spots-cm-txt
+  background-color: #FF6600
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.spots-cm .spots-cm-txt:after 
+  content: ""
+  position: absolute
+  display: none
+
+/* Show the checkmark when checked */
+.spots-cm input:checked ~ .spots-cm-txt:after 
+  display: block
+
+/* Style the checkmark/indicator */
+.spots-cm .spots-cm-txt:after 
+  right: 10px
+  top: 12px
+  width: 5px
+  height: 10px
+  border: solid white
+  border-width: 0 3px 3px 0
+  transform: rotate(45deg)
+  
+  
+.spots-cm-txt-taken
+  background-color: darkblue !important

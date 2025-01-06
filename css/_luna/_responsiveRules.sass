@@ -1,0 +1,28 @@
+//              RESPONSIVE CSS
+@media (min-width: $screen-sm)
+  @for $i from 1 through 12
+    .col-sm-#{$i} 
+      flex-basis: (100% / 12) * $i
+      max-width: (100% / 12) * $i  
+  .ctn-sm
+    @include container($ctn-sm)
+      
+  .grid-space > .col
+    margin-bottom: 30px
+
+@media (min-width: $screen-md) 
+  @for $i from 1 through 12
+    .col-md-#{$i} 
+      flex-basis: (100% / 12) * $i
+      max-width: (100% / 12) * $i
+  .ctn-md
+    @include container($ctn-md)
+      
+@media (min-width: $screen-lg)
+  @for $i from 1 through 12
+    .col-lg-#{$i} 
+      flex-basis: (100% / 12) * $i
+      max-width: (100% / 12) * $i
+  .ctn-lg
+    @include container($ctn-lg)
+      

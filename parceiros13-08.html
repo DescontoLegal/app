@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/_luna/css.css">
+  <!-- <link rel="stylesheet" href="css/playg.css"> -->
+  <!-- <link rel="stylesheet" href="css/playground.css"> -->
+  
+  <link rel="stylesheet" href="_inc/_slick/slick.css">
+  <link rel="stylesheet" href="_inc/_slick/slick-theme.css">
+
+  <link rel="stylesheet" href="css/_misc/animate.css">
+  
+  <link rel="stylesheet" href="_inc/_ai/css/all.min.css">
+  
+  <title>Desconto Legal</title>
+</head>
+<body>
+      
+  <header class="header">
+    <div class="nav-ctn ctn-mb ctn-lg">
+      <img src="img/logo.png" alt="">
+
+        <div class="buy-it hide">
+          <a href="#">Faça seu cartão</a>
+        </div>
+
+        <i class="fas fa-bars nav-btn"></i>
+        <div class="nav close">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="http://cartaodescontolegal.com.br">Início</a></li>
+            <li class="nav-item"><a href="http://cartaodescontolegal.com.br/parceiros.html">Parceiros</a></li>
+            <li class="nav-item hide"><a href="#">Seja um Parceiro</a></li>
+          </ul>
+        </div>
+
+    </div> 
+  </header>      
+  
+  <div class="page-title-bg">
+    <div class="page-title-ctn ctn-mb ctn-lg">
+      <h1>Parceiros</h1>
+    </div>
+  </div>
+  
+  <section class="filter-ctn-bg ctn-p-sm">
+    <div class="filter-ctn ctn-mb ctn-lg">
+     
+      <div id="partners-btn" class="grid grid-space gutter-md">
+       
+        <div class="col col-break col-md-2">
+          <h1 class="filter-title">Todos os parceiros</h1>
+          <button class="filter-btn filter-btn-active" onclick="filterSelection('all')"><a href="#partners">Mostrar todos</a></button>
+        </div>        
+         
+        <div class="col col-break col-md-10">
+          <h1 class="filter-title">Listar por bairro</h1>
+          <button class="filter-btn" onclick="filterSelection('centro')"><a href="#partners">Centro</a></button>
+          <button class="filter-btn" onclick="filterSelection('balneario')"><a href="#partners">Balneario</a></button>
+          <button class="filter-btn" onclick="filterSelection('marinas')"><a href="#partners">Marinas</a></button> 
+          <button class="filter-btn" onclick="filterSelection('camorim')"><a href="#partners">Camorim</a></button>
+          <button class="filter-btn" onclick="filterSelection('village')"><a href="#partners">Village</a></button>
+          <button class="filter-btn" onclick="filterSelection('jacuecanga')"><a href="#partners">Jacuecanga</a></button>
+          <button class="filter-btn" onclick="filterSelection('monsuaba')"><a href="#partners">Monsuaba</a></button> 
+          <button class="filter-btn" onclick="filterSelection('japuiba')"><a href="#partners">Japuíba</a></button>
+          <button class="filter-btn" onclick="filterSelection('campobelo')"><a href="#partners">Campo Belo</a></button>
+          <button class="filter-btn" onclick="filterSelection('enseada')"><a href="#partners">Enseada</a></button>
+          <button class="filter-btn" onclick="filterSelection('novaangra')"><a href="#partners">Nova Angra</a></button>
+          <button class="filter-btn" onclick="filterSelection('areal')"><a href="#partners">Areal</a></button>
+          <button class="filter-btn" onclick="filterSelection('belem')"><a href="#partners">Belém</a></button>
+          <button class="filter-btn" onclick="filterSelection('bracui')"><a href="#partners">Bracuí</a></button>   
+          <button class="filter-btn" onclick="filterSelection('santarita')"><a href="#partners">Sta. Rita</a></button>            
+          <button class="filter-btn" onclick="filterSelection('frade')"><a href="#partners">Frade</a></button>     
+          <button class="filter-btn" onclick="filterSelection('mambucaba')"><a href="#partners">Pq. Mambucaba</a></button>
+          <button class="filter-btn" onclick="filterSelection('ilhagrande')"><a href="#partners">Abraão</a></button>  
+          <button class="filter-btn" onclick="filterSelection('serradagua')"><a href="#partners">Serrá D'água</a></button>
+          <button class="filter-btn" onclick="filterSelection('sapinhatuba')"><a href="#partners">Sapinhatuba</a></button>
+        </div>
+        
+      </div>
+       
+      <h1 class="filter-title">Listar por categorias</h1>
+        
+      <div class="filter-categories-ctn">
+    
+          <button class="filter-btn filter-categories" onclick="filterSelection('eletronico')">
+            <a href="#partners">
+              <i class="fas fa-mobile"></i>
+              <h1>Eletrônicos</h1>
+            </a>
+          </button>
+              
+          <button class="filter-btn filter-categories" onclick="filterSelection('otica')">
+            <a href="#partners">
+              <i class="fas fa-glasses"></i>
+              <h1>Óticas</h1>
+            </a>
+          </button>
+          
+          <button class="filter-btn filter-categories" onclick="filterSelection('utilidade')">
+            <a href="#partners">
+              <i class="fas fa-store-alt"></i>
+              <h1>Utilidades</h1>
+            </a>
+          </button> 
+          
+          <button class="filter-btn filter-categories" onclick="filterSelection('farmacia')">
+            <a href="#partners">
+              <i class="fas fa-pills"></i>
+              <h1>Farmácias</h1>
+            </a>
+          </button>             
+
+          <button class="filter-btn filter-categories" onclick="filterSelection('gas')">
+            <a href="#partners">
+              <i class="fal fa-oven"></i>
+              <h1>Gás</h1>
+            </a>
+          </button>
+
+          <button class="filter-btn filter-categories" onclick="filterSelection('restaurante')">
+            <a href="#partners">
+              <i class="fad fa-utensils-alt"></i>
+              <h1>Restaurantes</h1>
+            </a>
+          </button>   
+   
+          <button class="filter-btn filter-categories" onclick="filterSelection('lanchonete')">
+            <a href="#partners">
+              <i class="fas fa-burger-soda"></i>
+              <h1>Lanchonetes</h1>
+            </a>
+          </button>   
+   
+          <button class="filter-btn filter-categories" onclick="filterSelection('festa')">
+            <a href="#partners">
+              <i class="fas fa-glass-cheers"></i>
+              <h1>Festas e Eventos</h1>
+            </a>
+          </button>   
+   
+          <button class="filter-btn filter-categories" onclick="filterSelection('pet')">
+            <a href="#partners">
+              <i class="fas fa-paw"></i>
+              <h1>Pet</h1>
+            </a>
+          </button>
+
+          <button class="filter-btn filter-categories" onclick="filterSelection('curso')">
+            <a href="#partners">
+              <i class="fas fa-globe-americas"></i>
+              <h1>Cursos</h1>
+            </a>
+          </button>
+                                           
+          <button class="filter-btn filter-categories" onclick="filterSelection('academia')">
+            <a href="#partners">
+              <i class="fas fa-dumbbell"></i>
+              <h1>Academias</h1>
+            </a>
+          </button>       
+                                              
+          <button class="filter-btn filter-categories" onclick="filterSelection('barbearia')">
+            <a href="#partners">
+              <i class="fal fa-cut"></i>
+              <h1>Barbearias</h1>
+            </a>
+          </button>
+                                      
+          <button class="filter-btn filter-categories" onclick="filterSelection('salao')">
+            <a href="#partners">
+              <i class="fas fa-female"></i>
+              <h1>Salões e estética</h1>
+            </a>
+          </button>       
+
+          <button class="filter-btn filter-categories" onclick="filterSelection('mercado')">
+            <a href="#partners">
+              <i class="fas fa-shopping-cart"></i>
+              <h1>Mercados</h1>
+            </a>
+          </button>
+                         
+          <button class="filter-btn filter-categories" onclick="filterSelection('saude')">
+            <a href="#partners">
+              <i class="fas fa-file-medical-alt"></i>
+            <h1>Saúde</h1>
+            </a>
+          </button>       
+                            
+          <button class="filter-btn filter-categories" onclick="filterSelection('laboratorio')">
+            <a href="#partners">
+              <i class="fas fa-microscope"></i>
+              <h1>Laboratórios</h1>
+            </a>
+          </button>
+
+          <button class="filter-btn filter-categories" onclick="filterSelection('dentista')">
+            <a href="#partners">
+              <i class="fas fa-tooth"></i>
+              <h1>Dentistas</h1>
+            </a>
+          </button>
+                    
+          <button class="filter-btn filter-categories" onclick="filterSelection('oficina')">
+            <a href="#partners">
+              <i class="fas fa-wrench"></i>
+              <h1>Oficinas</h1>
+            </a>
+          </button>
+                              
+          <button class="filter-btn filter-categories" onclick="filterSelection('refrigeracao')">
+            <a href="#partners">
+              <i class="far fa-temperature-frigid"></i>
+              <h1>Refrigeração</h1>
+            </a>
+          </button>  
+                                      
+          <button class="filter-btn filter-categories" onclick="filterSelection('construcao')">
+            <a href="#partners">
+              <i class="fas fa-hammer"></i>
+              <h1>Mat. de construção</h1>
+            </a>
+          </button>       
+                                         
+          <button class="filter-btn filter-categories" onclick="filterSelection('servico')">
+            <a href="#partners">
+              <i class="fas fa-handshake"></i>
+              <h1>Serviços</h1>
+            </a>
+          </button>
+                                                         
+          <button class="filter-btn filter-categories" onclick="filterSelection('roupa')">
+            <a href="#partners">
+              <i class="fas fa-tshirt"></i>
+              <h1>Roupas</h1>
+            </a>
+          </button>
+                                                         
+          <button class="filter-btn filter-categories" onclick="filterSelection('calcado')">
+            <a href="#partners">
+              <i class="fas fa-shoe-prints"></i>
+              <h1>Calçados</h1>
+            </a>
+          </button>
+                
+      </div>
+      
+      <div id="partners" class="grid grid-space gutter-sm m-t-sm filter-grid">
+      
+        <div id="partners" class="col col-break">
+          <h1 class="filter-title-center">Resultado:</h1>
+        </div>
+       
+     
+       
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Açougue Pantanal</h1>
+            <img src="img/partners/par1.jpeg" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio N° 405 e 409</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>       
+            
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Açougue Pantanal</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo N° 30 </p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Japuíba</span></h4>
+          </div>
+        </div>  
+                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item belem roupa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Alcione Modas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida São José N° 1.255</p>
+            <h3><span>Desconto: </span>2 a 10%</h3>
+            <h4><span>Belém</span></h4>
+          </div>
+        </div> 
+                          
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village festa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Alê Buffet e Festas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Doce Angra N° 347</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Village</span></h4>
+          </div>
+        </div>
+                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item marinas eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Angr@.com</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Estrada do Marinas N° 580<br>Cond. Praia do Jardim I Bloco II Apt. 107</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Marinas</span></h4>
+          </div>
+        </div>
+                                    
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Angra Cell</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio N° 297</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro festa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Angra Festas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Professor Limpa N° 16</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade oficina">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Auto Center Daniel</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rodovia Governardor Mario Covas N° 121</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro lanchonete">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Bammbú Açaí</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho N° 376</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia do Bruno</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Frei Inácio N° 110</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                        
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia do Bruno</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho N° 539</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item marinas barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia do Bruno</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Shopping Piratas - 2° piso loja 219</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Marinas</span></h4>
+          </div>
+        </div>
+                                                                  
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item novaangra barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia Fígaros</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Francelino Alves de Lima N° 32</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Nova Angra</span></h4>
+          </div>
+        </div>
+                                                                       
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia VIP</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Doce Angra N° 266</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Village</span></h4>
+          </div>
+        </div>
+                                                                            
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small frade barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barber Shop Man's House</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua São Sebastião N° 125</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Frade</span></h4>
+          </div>
+        </div>
+                                                                            
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small frade construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Bazar dos Pescadores Mat. de Construção</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Carlos Souza Gomes Borges S/N</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Frade</span></h4>
+          </div>
+        </div>
+                                                                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small jacuecanga barbearia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Barbearia Henrique Teodoro</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Conde Maurício de Nassau N° 642 Loja E</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Jacuecanga</span></h4>
+          </div>
+        </div>      
+                                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro restaurante">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Boteco do Coronel</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho N° 395</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4>  
+          </div>
+        </div>
+                                                                                        
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro mercado ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Boutique das Carnes</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Professor Lima N° 21</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro construcao ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Carvalho Home Center</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Júlio Maria N° 390</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Centro</span></h4>  
+          </div>
+        </div>
+                                                                                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item jacuecanga construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Carvalho Home Center</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Conde Maurício de Nassau S/N</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Jacuecanga</span></h4> 
+          </div>
+        </div>
+                                                                                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item jacuecanga servico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Chaveiro Expresso</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Conde Maurício de Nassau S/N</p>
+            <h3><span>Desconto: </span>5 a 15%</h3>
+            <h4><span>Jacuecanga</span></h4> 
+          </div>
+        </div>
+                                                                                                     
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro saude ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Clínica de Olhos Fernandes</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Raul Pompéia N° 90, Sala 1D e 1D</p>
+            <h3><span>Desconto: </span>40%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                            
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">CTI do Celular</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Doce Angra N° 723</p>
+            <h3><span>Desconto: </span>40%</h3>
+            <h4><span>Village</span></h4>
+          </div>
+        </div>
+                                                                                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro roupa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dedal Modas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio N° 294</p>
+            <h3><span>Desconto: </span>10 a 30%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>                                                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village lanchonete">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Delicias da Vivi</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Carajás N° 51</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Village</span></h4>  
+          </div>
+        </div>
+                    
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro dentista">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dentistas do Brasil</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio N° 141 Sala 101</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba saude">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Doctor Med</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo N° 130</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small marinas saude">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dr. Felipe Melo Nutricionista</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Estrada do Marinas Shopping Piratas  3° Piso, Sala 306</p>
+            <h3><span>Desconto: </span>20%</h3>
+            <h4><span>Marinas</span></h4>
+          </div>
+        </div>
+                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item monsuaba saude dentista">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dr. Leonardo Dentista</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Canal N° 331 Loja 2</p>
+            <h3><span>Desconto: </span>25 a 30%</h3>
+            <h4><span>Monsuaba</span></h4>
+          </div>
+        </div>
+                                        
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro saude dentista">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dra. Aline Molinari Dentista </h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Raul Pompeia Edifício Londres Sala 118</p>
+            <h3><span>Desconto: </span>30%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro saude">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Dra. Talita Psicóloga</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Cônegos Bitencourt N°30</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                  
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item camorim farmacia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Drogaria Costa Verde</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida João Pedro II N°409</p>
+            <h3><span>Desconto: </span>5 a 1%</h3>
+            <h4><span>Camorim</span></h4>
+          </div>
+        </div>
+                                                       
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item monsuaba farmacia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Drogaria Preço Ótimo</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Manoel de Souza Lima N°4 Quadra F Loja 4</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Monsuaba</span></h4>
+          </div>
+        </div>
+                                                            
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade farmacia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Drogaria Romar</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua São Sebastião N°12</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Frade</span></h4>
+          </div>
+        </div>
+                                                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Elétrica e Eletrônica Paumar</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio N°295</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item campobelo salao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Espaço Annaeli Ayres</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Barra Mansa N°9</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Campo Belo</span></h4>
+          </div>
+        </div>
+                                                                           
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro saude ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Fisioangra Clínica de Fisioterapia</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Honório Lima N°215</p>
+            <h3><span>Desconto: </span>25%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro salao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Floral Cosmético</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Travessa Jordão Galindo N°30, Loja D, E, e F</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Centro</span></h4>  
+          </div>
+        </div>
+                                                                                     
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">FS Tintas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Japoranga N°316</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                                                                                          
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro servico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Gráfica Bompresso</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua da Conceição N°150</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item monsuaba mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Gudinho's Bebidas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Antônio Bertholdo da Silva N°1.869</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Monsuaba</span></h4>
+          </div>
+        </div>
+                                                                                                    
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">GX Cell Tech Assistência</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Dr. Bastos N°16 Loja 6</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro curso ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">HG Escola Náutica Angra</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Dr. Moacir de Paula Lobo N°99</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Centro</span></h4>
+          </div>
+        </div>
+                                                                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small village mercados">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Hulk Distribuidora de Bebidas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Doce Angra N°266</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Village</span></h4>
+          </div>
+        </div>
+                                                                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small japuiba saúde">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">J.A. Medical Produtos Hospitalares e Ortopédicos</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Japoranga N°1000 Loja 1</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Japuíba</span></h4>
+          </div>
+        </div>
+                                                                                                                     
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item monsuaba lanchonete ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Lanches Andorinhas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Bertholdo da Silva Jordão S/N</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Monsuaba</span></h4> 
+          </div>
+        </div>
+                                                                                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade lanchonete ">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Lanchonete do Posto BR</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rodovia Vereador Mário Covas N° 644</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                                                                                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Leal Info Conectado</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo Nº 4.728 Loja 2</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                                                                                                                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba oficina">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Leo Soldador</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo Nº 4.034</p>
+            <h3><span>Desconto: </span>10 a 15%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>                                                                                                                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village utilidade">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Limpiscimar Bazar</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Pereira Deca S/N Lote 8 Quadra H</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Village</span></h4> 
+          </div>
+        </div>
+                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro utilidade">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Luna Utilidades e Decorações</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 412 B</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                           
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba restaurante">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">M H Comida Caseira</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo Nº 50</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                                
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade calcado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Mania dos Pés</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Sebastião Nº 100</p>
+            <h3><span>Desconto: </span>5 a 15%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                     
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro roupa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Marlana Modas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho e Rua do Comércio Nº 423</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                          
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Mec Celulares</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Travessa Miguel Elias Miguel Nº 31 Loja 5</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro otica">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Mercadão dos Óculos</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho Nº 349 Loja E</p>
+            <h3><span>Desconto: </span>10 a 15%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                    
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item balneario oficina">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">MFJ Auto Center</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Almirante Jair Carneiro Toscando de Brito Nº 691 Loja E</p>
+            <h3><span>Desconto: </span>5 a 15%</h3>
+            <h4><span>Balneário</span></h4> 
+          </div>
+        </div>
+                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item jacuecanga mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Minangra Distribuidora</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida dos Trabalhadores S/N</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Jacuecanga</span></h4> 
+          </div>
+        </div>
+                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Minangra Distribuidora</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 377</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village pet">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Mundo Animal</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Pereira Deca Nº 13</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Village</span></h4> 
+          </div>
+        </div>
+                                                                        
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro academia">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Mutaru</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Pereira Peixoto Nº 70</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item village oficina">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Oficina 2.0</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Pereira Deca Nº 7</p>
+            <h3><span>Desconto: </span>15 a 20%</h3>
+            <h4><span>Village</span></h4> 
+          </div>
+        </div>
+                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro dentista">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Orthopride</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 220</p>
+            <h3><span>Desconto: </span>35%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro otica">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Ótica Serra e Mar</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Travessa Santa Luzia Nº 80</p>
+            <h3><span>Desconto: </span>8 a 15%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro otica">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Óticas Diniz</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua da Conceição Nº 129</p>
+            <h3><span>Desconto: </span>10 a 15%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small monsuaba mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Padaria Império dos Pães</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Professor Guedes Alcoforado Nº 54</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Monsuaba</span></h4> 
+          </div>
+        </div>
+                                                                       
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item jacuecanga mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Peixaria Deus Proverá</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida dos Trabalhadores Nº 25</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Jacuecanga</span></h4> 
+          </div>
+        </div>
+                                                                                                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item monsuaba mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Peixaria Mix</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Antônio Bertholdo da Silva Jordão Nº 1789</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Monsuaba</span></h4> 
+          </div>
+        </div>
+                                                                                                       
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro restaurante">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Pensão Tio Ivan</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Travessa Estevão Pereira Nº 20</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade pet">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Petshop Planeta Animal</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Silva Travassos Nº 311</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                                                                                                
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small village restaurante lanchonete">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Pizzaria e Restaurante El Shaddai</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Doce Angra nº 362</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Village</span></h4> 
+          </div>
+        </div>
+                                                                                                                
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small frade mercado">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Puiatti Comércio de Bebidas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Paulo Sodré da Nóbrega nº 161</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                                                                                                                                     
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small monsuaba utilidade">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">RebecaAlice Utilidades e Presentes</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Antônio Bertholdo da Silva Jordão Nº 1798</p>
+            <h3><span>Desconto: </span>5 a 10%</h3>
+            <h4><span>Monsuaba</span></h4> 
+          </div>
+        </div>
+                                                                                                                 
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro lanchonete">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Rede de Salgados Carioca</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho Nº 349</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                                                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item verolme restaurante">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Restaurante da Morena</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Conde Maurício de Nassau Nº 825 </p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Verolme</span></h4> 
+          </div>
+        </div>
+                                                                                                                                           
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small frade restaurante">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Restaurante Recanto da Praça</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Praça do Frade S/N</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>                                                                                                                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro salao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Sobrancelhas VIP</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Dr. Moacir de Paula Lobo Nº 99</p>
+            <h3><span>Desconto: </span>15 a 20%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                             
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small japuiba construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Sobrinho Material de Construção</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo Nº 45</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Star Cell</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Prefeito João Gregório Galindo Nº 40</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Japuíba</span></h4> 
+          </div>
+        </div>
+                                                      
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro servico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Start Segurança Eletrônica</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Britaldo Barbosa Nº 206 A</p>
+            <h3><span>Desconto: </span>15 a 20%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                   
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade roupa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Styllo Carioca Store</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Portugal Nº 100</p>
+            <h3><span>Desconto: </span>10 a 20%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                                                                  
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro eletronico">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">TED Tech Soluções em Informática</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Coronel Carvalho Nº 404</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                                
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item camorim festa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">TH Eventos</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua 8 Nº 30</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Camorim Grande</span></h4> 
+          </div>
+        </div>
+                                                                                                           
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro laboratorio">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">TM & B Laboratório</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Avenida Raul Pompéia Nº 90</p>
+            <h3><span>Desconto: </span>20%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                  
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item frade lanchonete">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Torre de Pizza</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Paulo Sodré da Nóbrega Nº 66</p>
+            <h3><span>Desconto: </span>15%</h3>
+            <h4><span>Frade</span></h4> 
+          </div>
+        </div>
+                                                                                               
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Tuca Parafusos</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 404</p>
+            <h3><span>Desconto: </span>21 a 41%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                                                                                              
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item japuiba construcao">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Tuca Parafusos</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua Japoranga Nº 1</p>
+            <h3><span>Desconto: </span>21 a 41%</h3>
+            <h4><span>Japuiba</span></h4> 
+          </div>
+        </div>
+                                                                                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item filter-item-small centro roupa">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">UPS Comércio de Roupas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Travessa João Galindo Nº 30 Loja B</p>
+            <h3><span>Desconto: </span>5%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>                                                                                                                         
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro utilidade">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Verdencanto Flores</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 16</p>
+            <h3><span>Desconto: </span>10%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                                    
+        <div class="col col-break col-sm-6 col-md-4 col-lg-3 filter-item centro curso">
+          <div class="p-sm filter-item-inside">
+            <h1 class="p-t-sm">Yes Idiomas</h1>
+            <img src="img/clients/client.png" alt="">
+            <p class="m-sm"><span>Endereço: </span><br>Rua do Comércio Nº 301  2º Piso</p>
+            <h3><span>Desconto: </span>58%</h3>
+            <h4><span>Centro</span></h4> 
+          </div>
+        </div>
+                 
+        
+        
+      </div>
+      
+      
+      
+    </div>
+  </section>
+  
+  <footer class="footer-bg">
+    <div class="footer ctn-mb ctn-lg ctn-p-t-sm grid  grid-center grid-space">
+     
+      <div class="col col-break col-lg-4 footer-logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      
+      <div class="col col-break col-md-6 col-lg-4 footer-contact-us">
+       
+        <h1 class="footer-title m-b-md">Fale conosco</h1>
+        
+        <div class="contact-info">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>(24) 3377-3691</p>
+        </div>
+         
+        <div class="contact-info">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>(24) 98859-9197</p>
+        </div>        
+         
+        <div class="contact-info contact-info-mail">
+          <span class="fa-stack fa-1x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fas fa-at fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>empreendimentos@cartaodescontolegal.com.br</p>
+        </div>
+        
+        
+      </div>    
+        
+      <div class="col col-break col-md-6 col-lg-4 footer-adress">
+
+        <h1 class="footer-title m-b-md">Endereço</h1>
+        
+        <p>Rua do Comércio, n°100 Sala 201 - Centro - Angra dos Reis/RJ</p>
+        
+        <div class="nav-social">
+          <a target="_blank" href="https://www.facebook.com/Cart%C3%A3o-Desconto-LEGAL-106814707546300"><i class="fab fa-facebook-square"></i></a>
+          <a target="_blank" href="https://instagram.com/cartaodescontolegal" ><i class="fab fa-instagram"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </footer>
+  
+  
+  <div class="devby">
+    <p>Desenvolvido por Victor Hugo</p>
+  </div>
+
+  <!--            SCRIPTS           --> 
+                   
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+                  
+  <script src="js/jquery-3.4.1.min.js"></script>            
+                        
+  <script src="_inc/_slick/slick.min.js"></script>                       
+                          
+  <script src="js/luna.js"></script> 
+                         
+  <script src="js/script.js"></script>
+  
+  <script>
+    window.onload = function() {
+      if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+      }
+    }
+  })
+  </script>
+  
+</body>
+</html>
